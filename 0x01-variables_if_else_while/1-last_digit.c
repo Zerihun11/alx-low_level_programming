@@ -2,8 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * Main function 
- * main function again
+ * main - Determine if a random number is less than 5 0r zero.
+(*
+ * Return: 0 on success
  */
 int main(void)
 {
