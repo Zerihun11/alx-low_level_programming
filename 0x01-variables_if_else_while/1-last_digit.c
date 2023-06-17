@@ -1,11 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/**
- * The last digit number
+/*
+ * more headers goes there
  *
 (*
- * Return: 0 on success
+ * betty style doc for function main goes there
  */
 int main(void)
 {
