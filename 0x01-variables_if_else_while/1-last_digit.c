@@ -2,8 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * -- Main function 
- * betty style doc for function main goes there
+ * Main function 
+ * main function again
  */
 int main(void)
 {
