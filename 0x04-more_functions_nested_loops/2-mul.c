@@ -1,11 +1,13 @@
 #include <main.h>
+
 /**
- * print_prodacts of twe num
- * @mul  to print.
+ * mul - multiplies 2 values
+ * @a: first value.
+ * @b: second value.
  *
- *
+ * Return: The sum (int).
  */
-    int mul(int a, int)
+int mul(int a, int b)
 {
-        return a * b;
+	return (a * b);
 }
