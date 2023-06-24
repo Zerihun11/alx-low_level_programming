@@ -1,30 +1,34 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - print two digits of two number
  *
  * Return: Always 0 (Succes)
  */
 
 int main(void)
 {
-	int n;
-	int i;
 
-	for (n = 0 ; n < 9 ; n++)
-	{
-		i = n + 1;
-		do {
-			putchar('0' + n);
-			putchar('0' + i);
-			if (n < 8)
-			{
-				putchar(',');
-				putchar(32);
-			}
-			i++;
-		} while (i < 10);
-	}
-	putchar('\n');
-	return (0);
+    int i, j;
+
+    for (i = 0; i <= 99; i++)
+        {
+            for (j = i + 1; j <= 99; j++)
+            {
+                putchar((i / 10) + '0');
+                putchar((i % 10) + '0');
+                putchar(' ');
+                putchar((j / 10) + '0');
+                putchar((j % 10) + '0');
+
+                if (i < 98 || j < 99)
+                {
+                    putchar(',');
+                    putchar(' ');
+                }
+            }
+        }
+            putchar('\n');
+            return (0);
 }
+
