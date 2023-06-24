@@ -1,19 +1,16 @@
-#include "main.h"
-#include <unistd.h>
+#include "holberton.h"
 
 /**
- * _isupper - uppercase letters
- * @c: char to check
+ * _isupper 
+ * @c: Character to be tested
  *
- * Return: 0 or 1.
- *
+ * Return: 1 for  uppercase else 0
  */
-
 int _isupper(int c)
 {
-      if (c >= 'A' && c<= 'Z')
-         return (1);
-     else
-         return (0);
-
+	if (c >= 65 && c <= 90)
+	{
+		return (1);
+	}
+	return (0);
 }
