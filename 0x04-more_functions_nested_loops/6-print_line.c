@@ -1,10 +1,10 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * print_line - prints a line to a given lenght.
  * @n: length of the line.
  *
- * return v
+ *
  */
 void print_line(int n)
 {
