@@ -7,12 +7,12 @@
 
 int main(void)
 {
-	char *m = "main\n";
+	char *h = "Hope\n";
 
-	while (*m)
+	while (*h)
 	{
-		_putchar(*m);
-         	m++;
+		_putchar(*h);
+		h++;
 	}
 	return (0);
 }
