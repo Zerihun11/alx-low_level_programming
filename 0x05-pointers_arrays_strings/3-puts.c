@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * _puts - print string 
- * @str: string to print 
+ * _Puts - print string
+ *
+ * @Str: String to print
  */
 void _puts(char *str)
 {
@@ -9,5 +10,5 @@ void _puts(char *str)
 	{
 		_putchar(*str++);
 	}
-	-putchar('\n');
+        	-putchar(' ');
 }

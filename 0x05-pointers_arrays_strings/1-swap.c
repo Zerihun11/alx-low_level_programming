@@ -1,7 +1,6 @@
 #include "main.h"
-
 /**
- * swap_int- swaps the values of two integer
+ * swap_int - swaps the values of two integer
  * @a: integer to swap
  * @b: integer to swap
  */
@@ -11,5 +10,5 @@ void swap_int(int *a, int *b)
 
 	m = *a;
 	*a = *b;
-	*b = m ;
+	*b = m;
 }
