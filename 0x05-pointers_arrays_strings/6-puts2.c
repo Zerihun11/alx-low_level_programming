@@ -6,9 +6,10 @@
  */
 void puts2(char *str)
 {
-	int lengi = 0, x = 0;
-	char *y = str[lengi];
-	int o;
+	int lengi, x;
+	
+	lengi = 0;
+	*y = str[lengi]
 
 	while (*y != '\0')
 	{
