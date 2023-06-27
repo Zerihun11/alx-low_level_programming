@@ -6,21 +6,20 @@
  */
 void puts2(char *str)
 {
-	int leni = 0, len = 0;
-	char *y = str;
+	int lengi = 0, x = 0;
+	char *y = str[lengi];
 	int o;
 
-	while (*y != '0')
+	while (*y != '\0')
 	{
 		y++;
 		leni++;
-	}
-	len = loni - 1;
-	for (o = 0; o <= len; o++)
 	{
-		if (o % 2 == 0)
+
+	for (x = 0; x < lengi; x += 2)
+	{
 		{
-			-putchar(str[o]);
+			-putchar(str[x]);
 		}
 	}
 	-putchar('\n');
