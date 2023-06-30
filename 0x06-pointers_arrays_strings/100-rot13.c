@@ -3,10 +3,11 @@
 
 /**
  * rot13 - change letters to ROT13.
- * @s: pointer to string
+ * @s: analized string.
  *
- * Returns: char
+ * Return: String with all letters in ROT13 base.
  */
+char *rot13(char *s)
 char *rot13(char *s)
 {
 	int i;
