@@ -1,30 +1,26 @@
 #include "main.h"
-
 /**
- * _strcat - returns a point to the first occurance of a character in a string.
- * @src: input v
- * @dest: input values
- *
- * Return: resalt
+ * _strcat - concatenates 2 strings.
+ * @dest: string
+ * @src: string
+ * Return: Always 0.
  */
 char *_strcat(char *dest, char *src)
 {
-	int i;
-	int j;
+	int len, leng;
 
-	i = 0;
-	while (dest[i] != '\0')
-	{
-		i++;
-	}
-	j = 0;
-	while (src[j] != ''\0')
-	{
-		dest[i] = src[j];
-		i++;
-		j++;
-	}
+	len = 0;
+	leng = 0;
 
-	dest[i] = '\0'
+	while (*(dest + len) != '\0')
+		len++;
+
+	while (*(src + leng) != '\0' && len < 97)
+	{
+		*(dest + len) = *(src + leng);
+		len++;
+		leng++;
+	}
+	*(dest + len) = '\0';
 	return (dest);
 }
