@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _strncpy - concatenate strings and  defining size
  * @dest: string 
