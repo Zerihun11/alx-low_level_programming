@@ -2,8 +2,8 @@
 
 /**
  * _strncpy - concatenate strings and  defining size
- * @dest: string 
- * @src: string 
+ * @src: String
+ * @dest: String
  * @n: size of second string
  * Return: Copy of string
  */
