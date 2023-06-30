@@ -1,30 +1,27 @@
-#include <main.h>
-
+#include "main.h"
 /**
- * _strncat - this funtion fills memory with a constant byte.
- * @dest: a constant byte.
- * @src: number of bytes.
- * @n: input values
- *
- * Return: A pointer to memory area src.
+ * _strncat - concatenate strings, defining the size.
+ * @dest: string con
+ * @src: string to be con
+ * @n: size of string
+ * Return: Always 0.
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i;
-	int j;
+	int len, leng;
 
-	i = 0;
-	while (dest[i] != '\0')
+	len = 0;
+	leng = 0;
+
+	while (*(dest + len) != '\0')
+		len++;
+
+	while (*(src + leng) != '\0' && len < 97 && leng < n)
 	{
-		i++;
+		*(dest + len) = *(src + leng);
+		len++;
+		leng++;
 	}
-	j = 0;
-	while (j < n && src[j] != '\0')
-	{
-		dest[i] = src[j];
-		i++;
-		j++;
-	}
-	dest[i] = '\0';
+	*(dest + len) = '\0';
 	return (dest);
 }
