@@ -6,15 +6,15 @@
  */
 void more_numbers(void)
 {
-	int n, row, i, j;
+	int number, i, j, row;
 
 	for (row = 1; row <= 10; row++)
 	{
-		for (n = 0; n <= 14; n++)
+		for (number = 0; number <= 14; number++)
 		{
-			i = n / 10;
-			j = n % 10;
-			if (n > 9)
+			i = number / 10;
+			j = number % 10;
+			if (number > 9)
 				_putchar(i + '0');
 
 			_putchar(j + '0');
