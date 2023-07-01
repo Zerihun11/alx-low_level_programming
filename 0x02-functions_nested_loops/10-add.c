@@ -2,8 +2,8 @@
 
 /**
  * add - add teo integer.
- * @a: values
- * @b: second values for sum
+ * @x: values
+ * @y: second values for sum
  * Return: sum
  */
 int add(int x, int y)
