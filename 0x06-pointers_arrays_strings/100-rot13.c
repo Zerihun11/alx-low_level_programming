@@ -8,7 +8,6 @@
  * Return: String with all letters in ROT13 base.
  */
 char *rot13(char *s)
-char *rot13(char *s)
 {
 	int i;
 	int j;
