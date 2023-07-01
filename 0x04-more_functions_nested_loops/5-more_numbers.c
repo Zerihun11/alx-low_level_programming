@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * more_numbers - prints 0 to 14 on one line ten times.
@@ -6,19 +7,19 @@
  */
 void more_numbers(void)
 {
-	int number, i, j, row;
+	int i;
+	int num = 0;
 
-	for (row = 1; row <= 10; row++)
+	for (i = 0 ; i < 10 ; i++)
 	{
-		for (number = 0; number <= 14; number++)
+		while (num < 15)
 		{
-			i = number / 10;
-			j = number % 10;
-			if (number > 9)
-				_putchar(i + '0');
-
-			_putchar(j + '0');
+			if (num > 9)
+				_putchar('0' + num / 10);
+			_putchar('0' + num % 10);
+			num++;
 		}
+		num = 0;
 		_putchar('\n');
 	}
 }
