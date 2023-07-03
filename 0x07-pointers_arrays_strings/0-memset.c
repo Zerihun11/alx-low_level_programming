@@ -1,7 +1,7 @@
 #include <main.h>
 
 /**
- * __memset - fill a block of memory with special values
+ * _memset - this funtion fills memory with a constant byte
  * @s: Starting addres of memory
  * @b: the desired values
  * @n: number of bytes to the change
@@ -10,12 +10,14 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	 int i = 0;
+	unsigned int i;
 
-	 for (; n > 0; i++)
-	 {
-		 s[i] = b;
-		 n--;
-	 }
-	 return (s);
+	i = 0;
+	while (i < n)
+	{
+		s[i] = b;
+		i++;
+	}
+
+	return (s);
 }
