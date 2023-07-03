@@ -8,20 +8,18 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	unsigned int i, j;
+	int j = 0;
 
-	i = 0;
-	j = 0;
-	while (s[i] != '\0')
+	while (*s)
 	{
-		j = 0;
 		while (accept[j] != '\0')
 		{
-			if (s[i] == accept[j])
-				return ((s + i));
+			if (*s == accept[j])
+				return (s);
 			j++;
 		}
-		i++;
+		j = 0;
+		s++;
 	}
-	return (NULL);
+	return ('\0');
 }
