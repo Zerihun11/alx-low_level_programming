@@ -1,19 +1,27 @@
 #include "main.h"
 
 /**
- * wildcmp - Converting fanction
- * @s1: input string
- * @s2: input string
- * Return: Always Succes (0)
+ * wildcmp - compares two strings
+ * @s1: string to compare to
+ * @s2: string with wild character
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 int wildcmp(char *s1, char *s2)
 {
-	int result;
-
-	result = wildcmp(char *s1,char *s2);
- 	if (char *s1 == char *s2)
+	if (*s1 == '\0' && *s2 == '\0')
 		return (1);
-	else
-		return (0);
-}
 
+	if (*s1 == *s2)
+		return (wildcmp(s1 + 1, s2 + 1));
+
+	if (*s2 == '*')
+	{
+		if (*s2 == '*' && *(s2 + 1) != '\0' && *s1 == '\0')
+			return (0);
+		if (wildcmp(s1, s2 + 1) || wildcmp(s1 + 1, s2))
+			return (1);
+	}
+
+	return (0);
+}
