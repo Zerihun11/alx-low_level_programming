@@ -1,24 +1,22 @@
 #include "main.h"
 
-
 /**
-* _realloc - reallocates a memory block
-* @ptr: pointer to the memory previously allocated with a call to malloc
-* @old_size: size of ptr
-* @new_size: size of the new memory to be allocated
-*
-* Return: pointer to the address of the new memory block
-*/
-
+ *_realloc - reallocates a memory block
+ *@ptr: pointer to the memory previously allocated with a call to malloc
+ *@old_size: size of ptr
+ *@new_size: size of the new memory to be allocated
+ *
+ *Return: pointer to the address of the new memory block
+ */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	void *temp_block;
+	void *temp_ptr1;
 	unsigned int i;
 
 	if (ptr == NULL)
 	{
-		temp_block = malloc(new_size);
-		return (temp_block);
+		temp_ptr1 = malloc(new_size);
+		return (temp_ptr1);
 	}
 	else if (new_size == old_size)
 		return (ptr);
@@ -30,13 +28,13 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 	else
 	{
-		temp_block = malloc(new_size);
-		if (temp_block != NULL)
+		temp_ptr1 = malloc(new_size);
+		if (temp_ptr1 != NULL)
 		{
 			for (i = 0; i < min(old_size, new_size); i++)
-				*((char *)temp_block + i) = *((char *) ptr + i);
+				*((char *)temp_ptr1 + i) = *((char *) ptr + i);
 			free(ptr);
-			return (temp_block);
+			return (temp_ptr1);
 		}
 		else
 			return (NULL);
