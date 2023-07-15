@@ -2,7 +2,8 @@
 #define MAIN_H
 
 #include <stdio.h>
-#include <stdlib> 
+#include <stdlib.h> 
+#include <limits.h>
 
 int _putchar(char c);
 void *malloc_checked(unsigned int b);
@@ -11,7 +12,7 @@ int len(char *str);
 void *_calloc(unsigned int nmemb, unsigned int size);
 int *array_range(int min, int max);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
-int find_len(char *str);
+void errors(void);
 char *create_xarray(int size);
 char *iterate_zeroes(char *str);
 void get_prod(char *prod, char *mult, int digit, int zeroes);
