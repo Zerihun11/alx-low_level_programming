@@ -1,7 +1,8 @@
 #include "function_pointers.h"
+#include <stdlib.h>
 
 /**
- * print_name_as_is - prints a name as is
+ * print_name  - prints a name 
  * @name: name of the person
  * @f: pointer to function
  * Return: Nothing.
