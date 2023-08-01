@@ -1,4 +1,5 @@
-#include "list.h"
+#include "lists.h"
+#include <stdio.h>
 
 /**
  * free_listint - free linked list
