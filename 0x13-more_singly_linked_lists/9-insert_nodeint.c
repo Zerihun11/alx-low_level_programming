@@ -2,7 +2,7 @@
 
 static listint_t *new_node(const int n);
 /**
- * insert_nodeint_at_index - function that inserts a new node at a given position.
+ * insert_nodeint_at_index - function that inserts a new node in given positon.
  * @head: pointer of pointer to a listint_t
  * @idx: index of the list where the new node should be added
  * @n: value to set the new node to.
