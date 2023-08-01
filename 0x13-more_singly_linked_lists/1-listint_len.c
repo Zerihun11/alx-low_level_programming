@@ -1,11 +1,10 @@
 #include "lists.h"
-#include <stdio.h>
 
 /**
- * listint_len - returns the number of element 
- * @h: linked list ot type listint_t to traverse
+ * listint_len - returns the lenth of a list;
+ * @h: pointer to the head of a list.
  *
- * Return: numbers of nodes
+ * Return: Length (INT) of a list.
  */
 size_t listint_len(const listint_t *h)
 {

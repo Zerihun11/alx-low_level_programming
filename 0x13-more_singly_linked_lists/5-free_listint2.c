@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * free_listint - free linked list
+ * free_listint2 - free linked list
  * @head: listint_t list to be free
  * Return: succes
  */

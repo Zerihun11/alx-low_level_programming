@@ -4,20 +4,21 @@
 /**
  * pop_listint - deletes the head node of a line l
  * @head: pointer to the first element in the link list
- * or 0 for empty list
  * Return: data
  */
 int pop_listint(listint_t **head)
 {
-	listint_t *temp;
-	int num;
+	int value;
+	listint_t *new_head;
 
-	if (!head || !*head)
-		return;
-	num = (*head)->n;
-	temp = (*head)->next;
+	if (!(*head) || !head)
+		return (0);
+
+	new_head = (*head)->next;
+	value = (*head)->n;
 	free(*head);
-	*head = temp;
+	*head = new_head;
 
-	return (num);
+	return (value);
 }
+
