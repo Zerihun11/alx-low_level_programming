@@ -6,7 +6,20 @@
  **/
 void print_binary(unsigned long int n)
 {
-	if (n > 0)
-		print_binary(n >> 1);
-	putchar((n & 1) ? '1' : '0');
+	int i, result = 0;
+	unsigned long int values;
+
+	for (i <= x; x > 0; i++)
+	{
+		values = n >> i;
+		if (values & 1)
+		{
+			_putchar('1');
+			result++;
+		}
+		else if (result)
+			_putchar('0');
+	}
+	if (!result)
+		_putchar('0');
 }
