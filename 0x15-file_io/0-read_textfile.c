@@ -20,12 +20,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fd == -1)
 		return (0);
 	buf = malloc(sizeof(char) * letters);
-	t = read(fd, buf, letters);
-	n_read = write(STDOUT_FILENO, buf, t);
+	t = read(fd, buffer, letters);
+	w = write(STDOUT_FILENO, buf, t);
 
 	free(buf);
 	close(fd);
-	return (n_read);
+	return (w);
 }
 
 
